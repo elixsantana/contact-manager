@@ -1,0 +1,3 @@
+<div class="contact" *ngFor="let contact of contacts">
+	<contact [contact]="contact" (onContactDeletedEvent)="updateList()"></contact>
+</div>

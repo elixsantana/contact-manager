@@ -1,0 +1,9 @@
+<div class="main-container">
+	<!-- <h1>Add New Contact</h1> -->
+	<div class="form">
+		<contact-form (onContactBeingEmitted)="onContactBeingReceived($event)"></contact-form>
+	</div>
+	<div class="list">
+		<contacts [listener]="onUpdateContactList"></contacts>
+	</div>
+</div>

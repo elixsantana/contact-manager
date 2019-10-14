@@ -1,0 +1,9 @@
+<div>
+	<div><span>First Name:</span> {{ contact?.firstName }}</div>
+	<div><span>Last Name:</span> {{ contact?.lastName }}</div>
+	<div><span>Phone:</span> {{ contact?.phone }}</div>
+	<div class="actions">
+		<button class="btn btn-outline-primary" (click)="onContactBeingEdited()"><i class="fa fa-edit"></i>Edit</button>
+		<button class="btn btn-outline-danger" (click)="removeContact()"><i class="fa fa-remove"></i>Remove</button>
+	</div>
+</div>

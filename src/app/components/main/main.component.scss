@@ -1,0 +1,21 @@
+.main-container {
+	display: flex;
+}
+
+.main-container > div {
+	padding: 20px;
+}
+
+.main-container > div:first-child {
+	flex: 1;
+}
+
+.main-container > div:last-child {
+	flex: 2;
+}
+
+@media (max-width: 717px) {
+	.main-container {
+		flex-direction: column;
+	}
+}

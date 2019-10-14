@@ -1,0 +1,15 @@
+span {
+	font-weight: bold;
+}
+
+button > i {
+	margin-right: 5px;
+}
+
+.actions {
+	margin-top: 10px;
+}
+
+.actions > button:first-child {
+	margin-right: 5px;
+}
