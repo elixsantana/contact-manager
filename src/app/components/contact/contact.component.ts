@@ -28,9 +28,9 @@ export class ContactComponent {
 	}
 
 	public removeContact(): void {
-		// if (ContactComponent.editState === false) {
-		this.localStorageManagerService.remove(String(this.contact.id));
-		this.onContactDeletedEvent.emit();
-		// } else confirm('Cannot delete while in Edit state');
+		if (ContactComponent.editState === false) {
+			this.localStorageManagerService.remove(String(this.contact.id));
+			this.onContactDeletedEvent.emit();
+		} else confirm('Cannot delete while in Edit state. Press OK, then Edit/Submit');
 	}
 }
